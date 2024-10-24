@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Task Manager</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Task Manager</h1>
+            <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        </div>
+
+        <div class="card">
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="Enter task description" aria-label="Task description">
+                <input type="text" id="taskerInput" placeholder="Assign to" aria-label="Tasker name">
+                <button class="btn btn-primary" id="addTask">Add Task</button>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-danger" id="deleteAllTasks">Delete All</button>
+            <button class="btn btn-primary" id="saveAllTasks">Save All</button>
+            <button class="btn btn-primary" id="selectAllTasks">Select All</button>
+        </div>
+
+        <div class="tasks" id="taskList"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
